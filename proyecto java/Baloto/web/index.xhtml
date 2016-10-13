@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        
+        
+        <div style="background-color: red; width: 100px ; height: 100px ; display: inline-block ">
+            
+            <h1 align="center"> #{balotoControlador.baloto[0]}</h1>
+            
+        </div>
+        
+        <div style="background-color: red; width: 100px ; height: 100px; display: inline-block  ">
+            
+                  <h1 align="center">  #{balotoControlador.baloto[1]}</h1>
+            
+        </div>
+        
+        <div style="background-color: red; width: 100px ; height: 100px; display: inline-block  ">
+            
+                 <h1 align="center">   #{balotoControlador.baloto[2]}</h1>
+            
+        </div>
+        
+        <div style="background-color: red; width: 100px ; height: 100px ; display: inline-block ">
+            
+            
+                  <h1 align="center">  #{balotoControlador.baloto[3]}</h1>
+        </div>
+        
+        <div style="background-color: red; width: 100px ; height: 100px; display: inline-block  ">
+            
+                  <h1 align="center">  #{balotoControlador.baloto[4]}</h1>
+            
+        </div>
+        
+        <div style="background-color: red; width: 100px ; height: 100px; display: inline-block  ">
+            
+            
+                  <h1 align="center">  #{balotoControlador.baloto[5]}</h1>
+        </div>
+        
+        
+       
+            <h:form>
+                <h:commandButton  action="#{balotoControlador.mostrarNumeros()}" value="Generar Numero"></h:commandButton>
+            </h:form>
+           
+        
+        
+        
+    </h:body>
+</html>
+

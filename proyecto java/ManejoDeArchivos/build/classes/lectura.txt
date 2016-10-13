@@ -1,0 +1,3 @@
+Ismael Alberto;Suárez Pardo;Instructor
+Carlos; Ramirez Gonzalez; Aprendiz
+Carlota;Aprendiz

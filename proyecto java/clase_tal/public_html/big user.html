@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>actividad 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <script type="text/javascript">
+          // código de validación de formularios vendrá aquí .
+            //-->
+        </script>
+
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">jhon joya 1068180</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="learn more.html">Actividad 1</a></li>
+                        <li><a href="About.html">Actividad 2</a></li>
+                        <li><a href="contact.html">Actividad 3</a></li>
+                        <li><a href="big user.html">Actividad 4</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>validacion mi primer formulario</h1>
+                <div>
+
+                    <form class="form-group"  action="/cgi-bin/test.cgi" name="myForm" onsubmit="return(validate());">
+                        <table class="table table-bordered" cellspacing="2" cellpadding="2" border="1">
+
+                            <tr>
+                                <td align="right">Nombre</td>
+                                <td><input class="form-control" type="text" name="Name" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">EMail</td>
+                                <td><input class="form-control" type="text" name="EMail" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">Zip Code</td>
+                                <td><input class="form-control" type="text" name="Zip" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">Country</td>
+                                <td>
+                                    <select class="form-control" name="Country">
+                                        <option value="-1" selected>[choose yours]</option>
+                                        <option value="1">USA</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">INDIA</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right"></td>
+                                <td><input class="btn btn-default" type="submit" value="Submit" /></td>
+                            </tr>
+
+                        </table>
+                    </form>
+
+                </div>
+                <p>...</p>
+                <p><a class="btn btn-info" href="http://getbootstrap.com/" role="button">Tools</a></p>
+            </div>
+        </div>
+    </body>
+</html>
