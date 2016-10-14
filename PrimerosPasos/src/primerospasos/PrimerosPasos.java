@@ -16,7 +16,24 @@ public class PrimerosPasos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.print("hello word, i'm develop");
+//*  System.out.print("hello word, i'm develop");
+//        long cel/*/= 3208606505L/*/; *//
+        
+        /*clase math*/
+//        double raiz=Math.sqrt(32);
+//        System.out.println(raiz);
+//        Float num1=5.85F;
+//          double num1=5.85;
+          /*refundicion*/
+//        int resultado=(int)Math.round(num1);
+        /*no es aconsejable para numeros mayores al almecenamientoo de
+        un dato de tipo "int"   */
+        double base=5;
+        double exponnete=3;
+        
+        int resultado=(int)Math.pow(base, exponnete);
+        
+        System.out.println(resultado+"mira"+((int)base));
     }
     
 }
