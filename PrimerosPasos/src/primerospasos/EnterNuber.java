@@ -11,16 +11,19 @@ import javax.swing.*;
  *
  * @author jhone
  */
-public class PracticaInputs {
+public class EnterNuber {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    String name_user=   JOptionPane.showInputDialog("deposit your name please");
-    String age=JOptionPane.showInputDialog("deposit your age please");
-    int age_user=Integer.parseInt(age);
-        System.out.println("hey "+name_user+" your have "+(age_user+1)+" age");
+        double x=21.00000;
+        System.out.printf("%1.2f",x/3);
+        
+        String num1=JOptionPane.showInputDialog("ingresa un numero");
+        double num2=Double.parseDouble(num1);
+        System.out.println("the raiz of "+num2+" is: ");
+        System.out.printf("%1.2f",Math.sqrt(num2));
     }
     
 }
