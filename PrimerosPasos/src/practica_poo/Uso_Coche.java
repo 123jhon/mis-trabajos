@@ -16,7 +16,9 @@ public class Uso_Coche {
                 + "nueva linea de autos inteligentes con estas carateristicas"
                 + ":");//Ejemplar de clase
         //ejemplarizando una clase
-        System.out.println(micarrito.toString());
+        Coche misegundocarro=new Coche(300, 400, 212, 4, 220," es bueno ");
+//        System.out.println(micarrito.toString());
+        System.out.println(misegundocarro.toString());
     
     }
 }

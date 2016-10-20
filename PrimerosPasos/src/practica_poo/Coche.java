@@ -7,7 +7,7 @@ public class Coche {
     private int motor;
     private int peso;
     private String Marca="BMW";
-    private String Descripcion;
+        private String Descripcion;
     public Coche(){}
     public Coche(int ancho,int largo,int motor,int ruedas,int peso,String Descripcion){
         this.ancho=ancho;
