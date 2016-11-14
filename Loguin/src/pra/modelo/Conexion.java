@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -21,7 +21,7 @@ public class Conexion {
     public final static String DB_NAME = "db_session";
     public final static String DB_USER = "root";
     public final static String DB_PASS = "nbuser"; 
-    //creacion de constructor
+    //creacion de constructor basio ojo esto es para permtir instanciar la conexion
     public Conexion(){}
     
         private static Conexion singleton;
@@ -31,8 +31,9 @@ public class Conexion {
         //manejo de excepciones en el momento
         //al hacer conexion a la bd
         try {
-            /*Instanciar el driver de db*/ /*se encuentra en la ibreria jdbc */
+            /*Instanciar el driver de bd*/ /*se encuentra en la ibreria jdbc */
             Class.forName("com.mysql.jdbc.Driver").newInstance();
+            //se instancia el servidor si es local o la url luego el puerto y de ultimas la base de datos
             String url = "jdbc:mysql://" + SERVER_NAME + ":" + SERVER_PORT + "/" + DB_NAME; 
             this.con = DriverManager.getConnection(url, DB_USER, DB_PASS);
         } catch (ClassNotFoundException ex) {

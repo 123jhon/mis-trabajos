@@ -10,7 +10,7 @@ package pra.modelo;
  * @author jhone
  */
 public class Empleado {
-    private int log_dni;
+    private String log_dni;
     private String log_pass;
     private String log_primerApellido;
     private String log_segApellido;
@@ -18,8 +18,10 @@ public class Empleado {
     private String log_segNombre;
     private String log_Privilegios;
     public Empleado(){
-        this.log_dni=0;
+        this.log_dni="";
+        
         this.log_primerApellido="";
+        this.log_pass="";
         this.log_segApellido="";
         this.log_priNombre="";
         this.log_segNombre="";
@@ -27,11 +29,11 @@ public class Empleado {
         
     }
 
-    public int getLog_dni() {
+    public String getLog_dni() {
         return log_dni;
     }
 
-    public void setLog_dni(int log_dni) {
+    public void setLog_dni(String log_dni) {
         this.log_dni = log_dni;
     }
 

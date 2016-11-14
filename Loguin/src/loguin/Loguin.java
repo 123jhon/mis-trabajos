@@ -5,6 +5,10 @@
  */
 package loguin;
 
+import pra.modelo.EmpleadoDAO;
+import pra.vista.JFLoguin;
+import prac.controlador.ControladorLoguin;
+
 /**
  *
  * @author jhone
@@ -16,6 +20,12 @@ public class Loguin {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFLoguin vistaL=new JFLoguin();
+        EmpleadoDAO modeloL=new EmpleadoDAO();
+        ControladorLoguin controladoL = new ControladorLoguin(vistaL, modeloL); 
+        
+        vistaL.setVisible(true);
+        vistaL.setLocationRelativeTo(null);
     }
     
 }
