@@ -56,7 +56,12 @@ public class JFLoguin extends javax.swing.JFrame {
 
         txtPri.setBackground(new java.awt.Color(0, 102, 102));
         txtPri.setForeground(new java.awt.Color(0, 255, 0));
-        txtPri.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "administrador", "cliente", "otro.." }));
+        txtPri.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "administrador", "cliente", "otro" }));
+        txtPri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPriActionPerformed(evt);
+            }
+        });
 
         txtPas.setBackground(new java.awt.Color(0, 255, 204));
 
@@ -106,7 +111,7 @@ public class JFLoguin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addComponent(txtPri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPri, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnIngresar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -122,6 +127,10 @@ public class JFLoguin extends javax.swing.JFrame {
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIngresarActionPerformed
+
+    private void txtPriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPriActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPriActionPerformed
 
     /**
      * @param args the command line arguments
